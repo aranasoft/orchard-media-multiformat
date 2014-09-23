@@ -1,0 +1,9 @@
+﻿Name: Media Multi-format
+AntiForgery: enabled
+Author: Arana Software, Jay Harris
+Website: https://github.com/aranasoft/orchard-media-multiformat
+Version: 1.0
+OrchardVersion: 1.8
+Description: Multi-Format and Multi-Source Support for Media
+Dependencies: Orchard.MediaLibrary
+Category: Media

@@ -1,0 +1,15 @@
+﻿@using Orchard.Utility.Extensions
+@{
+  dynamic field = Model.ContentField;
+  string name = field.DisplayName;
+  dynamic contents = field.MediaParts;
+}
+<section class="media-library-picker-field media-library-picker-field-@name.HtmlClassify()">
+  @if (contents != null && contents.Count > 0) {
+    <audio controls="controls">
+      @foreach (dynamic content in contents) {
+        <source src="@content.MediaUrl" type="@content.MimeType" />
+      }
+    </audio>
+  }
+</section>
