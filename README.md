@@ -6,7 +6,7 @@ Orchard's default Media Library Picker Field allows for multiple-file selection.
 
 ```html
 <video src="my-movie.webm" />
-<video src="my-movie.avi" />
+<video src="my-movie.mp4" />
 <video src="my-movie.mov" />
 ```
 
@@ -14,9 +14,9 @@ This module extends the Media Library Picker to allow for multiple-source Video 
 
 ```html
 <video>
-  <source src="my-movie.webm" />
-  <source src="my-movie.avi" />
-  <source src="my-movie.mov" />
+  <source src="my-movie.webm" type="audio/webm" />
+  <source src="my-movie.mp4" type="video/mp4" />
+  <source src="my-movie.mov" type="video/quicktime" />
 </video>
 ```
 
